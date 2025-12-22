@@ -5,7 +5,8 @@ const cors = require("cors");
 const app = express();
 app.use(express.json());
 app.use(cors({
-    origin: "*"
+    origin: "https://timer-five-kappa.vercel.app",
+    methods: ["GET", "POST"]
 }));
 
 app.listen(3000);
