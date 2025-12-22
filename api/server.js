@@ -32,4 +32,4 @@ app.post("/comments", async (req, res) => {
     res.status(201).json(comment);
 });
 
-module.exports = { app };
+module.exports = app;
